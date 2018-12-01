@@ -1,6 +1,6 @@
 """Advent of Code, Puzzle 2 solution."""
 if __name__ == "__main__":
-    with open('input.txt') as data:
+    with open('../input.txt') as data:
         numbers = [int(number) for number in data.readlines()]
         current_freq = 0
         idx = 0
