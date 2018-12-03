@@ -14,7 +14,5 @@ if __name__ == "__main__":
                 two_ct += 1
             if 3 in counter.values():
                 three_ct += 1
-
-        print(two_ct)
-        print(three_ct)
+                
         print(f'The final checksum is {two_ct * three_ct}')

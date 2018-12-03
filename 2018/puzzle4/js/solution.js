@@ -13,8 +13,8 @@ fs.readFile('../input.txt', 'utf8', (err, data) => {
 
         for (let j = 0; j < boxIds.length; j++) {
             if (i == j && boxIds[i].length == boxIds[j].length) continue;
-            let id1 = boxIds[i].split('')
-            let id2 = boxIds[j].split('')
+            let id1 = boxIds[i]
+            let id2 = boxIds[j]
             diff = 0
             diffIdx = 0
             for (let k = 0; k < id1.length; k++) {
@@ -25,7 +25,7 @@ fs.readFile('../input.txt', 'utf8', (err, data) => {
             }
             if (diff == 1) {
                 found = true;
-                checkAgainst = id1.join('')
+                checkAgainst = id1
                 break
             }
         }
